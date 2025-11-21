@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pauline Mitchell – Mortgage FAQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --primary: #1f2933;
+      --accent:  #162a54; /* brand color */
+      --bg:      #ffffff;
+      --border:  #e2e8f0;
+      --muted:   #4a5568;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--primary);
+    }
+
+    .faq-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 2.5rem;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    details {
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      padding: 0.55rem 0.9rem;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border-radius 0.15s ease;
+    }
+
+    details[open] {
+      border-radius: 0.75rem;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+      border-color: var(--accent);
+      background: #f8fafc;
+    }
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 0.96rem;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .chevron {
+      flex: 0 0 auto;
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      color: var(--muted);
+      transition: background 0.15s ease, transform 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    }
+
+    details[open] .chevron {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: transparent;
+      transform: rotate(90deg);
+    }
+
+    .faq-question {
+      flex: 1 1 auto;
+      padding-right: 0.25rem;
+    }
+
+    details > div {
+      margin-top: 0.75rem;
+      padding-left: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    ul {
+      margin: 0.35rem 0 0.35rem 1.1rem;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+
+    @media (max-width: 640px) {
+      .faq-wrapper {
+        padding: 1.25rem 0.75rem 2rem;
+      }
+
+      details > div {
+        padding-left: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="faq-wrapper">
+    <div class="faq-list">
+      <!-- 1. Who is Pauline Mitchell? -->
+      <details>
+        <summary>
+          <span class="chevron">›</span>
+          <span class="faq-question">Who is Pauline Mitchell?</span>
+        </summary>
+        <div>
+          Pauline Mitchell is a licensed mortgage professional. With access to resources to help individuals needing financing
+          nationwide, Pauline primarily serves homebuyers in Georgia, Alabama, and California.
+          <br /><br />
+          Whether you&apos;re a first-time homebuyer seeking down payment assistance, a move-up buyer juggling two homes, or a real
+          estate investor, Pauline and her team have the solutions for you.
+          <br /><br />
+          Throughout her career, Pauline has built a reputation with her Realtor partners as &quot;the best&quot; for her unique
+          ability to structure and fund even the most challenging mortgage scenarios. If you&apos;ve been turned down by other
+          lenders, Pauline is your go-to lender for a second opinion.
+        </div>
+      </details>
+
+      <!-- 2. What types of home loans are available through Pauline Mitchell? -->
+      <details>
+        <summary>
+          <span class="chevron">›</span>
+          <span class="faq-question">What types of home loans are available through Pauline Mitchell?</span>
+        </summary>
+        <div>
+          Homebuyers and homeowners have access to a wide range of loan options, including:
+          <ul>
+            <li><strong>Refinance:</strong> Rate and term, cash-out refinancing, and FHA and VA streamlined refinancing.</li>
+            <li><strong>Conventional loans:</strong> Flexible programs with as little as 3% down for qualified borrowers.</li>
+            <li><strong>FHA loans:</strong> Government-backed loans with low down payment requirements, great for first-time buyers.</li>
+            <li><strong>VA loans:</strong> Zero-down financing options for eligible veterans, service members, and surviving spouses.</li>
+            <li><strong>USDA loans:</strong> 100% financing options for qualifying rural and suburban properties.</li>
+            <li><strong>Jumbo loans:</strong> For buyers purchasing homes above the conventional loan limits.</li>
+            <li><strong>Down payment assistance:</strong> A variety of local, statewide, and national DPA programs, including Pauline&apos;s in-house DPA program.</li>
+            <li><strong>Personal loans and lines of credit:</strong> Personal loans, lines of credit, and auto loans.</li>
+            <li><strong>Home equity products:</strong> Including bridge loans and home equity loans.</li>
+            <li><strong>Construction and renovation:</strong> A dedicated in-house construction lending team to navigate the new-build and renovation process.</li>
+            <li><strong>Reverse mortgages:</strong> Mortgages tailored to people 65 and older.</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- 3. What first-time homebuyer programs are available? -->
+      <details>
+        <summary>
+          <span class="chevron">›</span>
+          <span class="faq-question">What first-time homebuyer programs are available?</span>
+        </summary>
+        <div>
+          We offer several first-time homebuyer (FTHB) loan programs designed to make homeownership more affordable. These programs
+          often feature reduced down payments, lower interest rates, and flexible qualification guidelines. Pauline and her team
+          specialize in guiding first-time buyers through these programs to help them maximize their benefits.
+          <br /><br />
+          Additionally, there are national programs available, and Pauline offers in-house programs for first-time buyers.
+        </div>
+      </details>
+
+      <!-- 4. Are down payment assistance (DPA) programs available? -->
+      <details>
+        <summary>
+          <span class="chevron">›</span>
+          <span class="faq-question">Are down payment assistance (DPA) programs available?</span>
+        </summary>
+        <div>
+          Yes! We offer multiple down payment assistance programs, including local housing authority initiatives. These programs can
+          provide grants or forgivable loans to cover all or part of your down payment or closing costs.
+          <br /><br />
+          Additionally, Pauline offers an in-house DPA program as well as a variety of national programs to fit your needs.
+        </div>
+      </details>
+
+      <!-- 5. How much do I need for a down payment? -->
+      <details>
+        <summary>
+          <span class="chevron">›</span>
+          <span class="faq-question">How much do I need for a down payment?</span>
+        </summary>
+        <div>
+          The required down payment depends on your loan type:
+          <ul>
+            <li><strong>1% Home program:</strong> Pauline&apos;s in-house program allows for as little as 1% down.</li>
+            <li><strong>Conventional loans:</strong> As little as 3% down for qualified borrowers.</li>
+            <li><strong>FHA loans:</strong> Typically 3.5% down.</li>
+            <li><strong>VA and USDA loans:</strong> 0% down.</li>
+          </ul>
+          With down payment assistance programs, many buyers can purchase a home with little to no money down.
+        </div>
+      </details>
+
+      <!-- 6. How do I get pre-approved for a home loan? -->
+      <details>
+        <summary>
+          <span class="chevron">›</span>
+          <span class="faq-question">How do I get pre-approved for a home loan?</span>
+        </summary>
+        <div>
+          The first step is to complete a secure online application or call <a href="tel:19122163500">(912) 216-3500</a> to get started.
+          <br /><br />
+          A pre-approval tells you exactly how much home you can afford and makes your offer stronger in competitive housing markets.
+        </div>
+      </details>
+
+      <!-- 7. Why should I work with Pauline Mitchell instead of a national online lender? -->
+      <details>
+        <summary>
+          <span class="chevron">›</span>
+          <span class="faq-question">Why should I work with Pauline Mitchell instead of a national online lender?</span>
+        </summary>
+        <div>
+          <ul>
+            <li><strong>Personalized guidance with real communication</strong> — not a call center.</li>
+            <li><strong>Expert knowledge of loan programs,</strong> including national and local down payment assistance options.</li>
+            <li><strong>Faster responses and direct access to your Mortgage Loan Advisor</strong> (no waiting days for an update).</li>
+            <li><strong>A smoother loan process tailored to YOUR situation,</strong> not a one-size-fits-all online system.</li>
+            <li><strong>Proven relationships with local Realtors and partners,</strong> helping your file move efficiently.</li>
+            <li><strong>Flexible lending options</strong> with the ability to structure your loan for the best results.</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- 8. What credit score do I need to buy a home? -->
+      <details>
+        <summary>
+          <span class="chevron">›</span>
+          <span class="faq-question">What credit score do I need to buy a home?</span>
+        </summary>
+        <div>
+          While requirements vary by loan program, many homebuyers can qualify with a credit score as low as 580 for FHA loans.
+          Conventional loans typically require a higher score (620+). Alternative loan programs are available for qualified
+          individuals with credit scores as low as 500. Pauline can provide guidance on improving your credit to qualify for better
+          rates.
+        </div>
+      </details>
+
+      <!-- 9. Can I still get pre-approved if my credit needs work? -->
+      <details>
+        <summary>
+          <span class="chevron">›</span>
+          <span class="faq-question">Can I still get pre-approved if my credit needs work?</span>
+        </summary>
+        <div>
+          Yes. Pauline can review your current credit and build a Mortgage Action Plan with step-by-step actions to get you
+          mortgage-ready, even if you&apos;re starting below the typical score requirements.
+        </div>
+      </details>
+
+      <!-- 10. How long will it take to improve my credit for a mortgage? -->
+      <details>
+        <summary>
+          <span class="chevron">›</span>
+          <span class="faq-question">How long will it take to improve my credit for a mortgage?</span>
+        </summary>
+        <div>
+          Every situation is different, but Pauline provides a customized Mortgage Action Plan with targeted steps, timelines, and
+          expected outcomes so you know exactly what to do and when you&apos;ll be ready.
+        </div>
+      </details>
+
+      <!-- 11. How long does the home loan process take? -->
+      <details>
+        <summary>
+          <span class="chevron">›</span>
+          <span class="faq-question">How long does the home loan process take?</span>
+        </summary>
+        <div>
+          On average, the mortgage process takes 30 to 45 days from purchase contract to closing. With Pauline&apos;s team, you can
+          often close faster thanks to the streamlined digital process and strong communication with local real estate agents.
+        </div>
+      </details>
+
+      <!-- 12. How much can I qualify for with today’s mortgage rates? -->
+      <details>
+        <summary>
+          <span class="chevron">›</span>
+          <span class="faq-question">How much can I qualify for with today’s mortgage rates?</span>
+        </summary>
+        <div>
+          How much you qualify for depends on your income, debt-to-income ratio, credit score, and loan program. Pauline can issue a
+          personalized pre-approval to show you your exact buying power.
+        </div>
+      </details>
+    </div>
+  </div>
+</body>
+</html>
